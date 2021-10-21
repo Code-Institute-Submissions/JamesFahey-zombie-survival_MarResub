@@ -88,7 +88,25 @@ def leave():
             # exit()
 
 def car():
-    print("hello")
+    print("You load the supplies into the car, jess straps Joseph into his car seat.")
+    time.sleep(2)
+    print("Still no sign of any zombies.")
+    time.sleep(2)
+    print("You turn the key in the ignition, the car wont start. You try again still nothing.")
+    time.sleep(2)
+    print("Jess begins to panic and shouts “hurry up, come on we have to go”.")
+    time.sleep(2)
+    print("“Im trying” you snap back. This causes joseph to cry.")
+    time.sleep(2)
+    print("With all the commotion you don’t see the zombies approach the car and")
+    time.sleep(2)
+    print("CRASH they smash through your drivers window.")
+    time.sleep(2)
+    print("Do you kick the door open pushing the zombies back")
+    time.sleep(2)
+    print("or reach for your crowbar under the drivers seat.")
+    time.sleep(2)
+    print("Kick or Crowbar")
 
 def back():
     print("hello") 
