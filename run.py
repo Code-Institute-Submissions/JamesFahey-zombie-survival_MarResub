@@ -57,7 +57,7 @@ def start():
 def leave():
     print("You pack up all remaining food and supplies, wait for it to be clear outside before making your move.")
     time.sleep(2)
-    print("Do you take the car which has a full tank of petrol ready from the camping trip")
+    print("Do you take the car which could attrack nearby zombies")
     time.sleep(2)
     print("or go out the back way which leads to a now unused railway line.")
     time.sleep(2)
@@ -195,10 +195,18 @@ def kick():
             print("Doubt you would of got far anyway")
             # exit()
 
-def get_out():
-    print("hello") 
-
 def keep_going():
+    print("You avoid cities to stay clear of the hoards as the miles tick by and night falls.")
+    time.sleep(2)
+    print("Resources are low with no options to stop. The car begins to chug as you use the last of the fuel")
+    time.sleep(2)
+    print("As jess and Joseph sleep the crowd moves in…")
+    time.sleep(2)
+    print("You did not survive the zombie outbreak")
+    time.sleep(4)
+    play_again()
+
+def get_out():
     print("hello")
 
 def back():
