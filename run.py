@@ -108,10 +108,66 @@ def car():
     time.sleep(2)
     print("Kick or Crowbar")
 
+    answer = input(">").lower().strip()
+    if answer == "kick":
+        # take player to cross_roads
+        kick()
+    elif answer == "crowbar":
+        # take player to play_again()
+        crowbar()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either car or back. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "kick":
+        # take player to cross_roads
+            kick()
+        elif answer == "crowbar":
+        # take player to play_again()
+            crowbar()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def crowbar():
+    print("You reach under your chair, frantically trying to grab your crowbar.")
+    time.sleep(2)
+    print("Jess and Joseph are screaming, 4 arms are reaching through the window pulling at you")
+    time.sleep(2)
+    print("Your fingers brush against the crowbar as teeth sink into your neck.")
+    time.sleep(2)
+    print("Jess wails in horror just as the growing group of zombies smash the passenger window...")
+    time.sleep(2)
+    print("You did not survive the zombie outbreak")
+    time.sleep(4)
+    play_again()
+
+def kick():
+    print("hello") 
+
 def back():
     print("hello") 
 
 def stay():
     print("hello")
+
+def play_again():
+    print("Want to try and survive the zombie outbreak again? Y or N")
+    # convert the player's input to lower_case
+    answer = input(">").lower().strip()
+    if answer == "y":
+        # take player to start()
+        start()
+    elif answer == "n":
+        # exit() the program
+        print("Too scared to see if you would of made it?")
+        print("Doubt you would of got far anyway")
+        # exit()
+    else:
+        # return to start()
+        start()
 
 start()
