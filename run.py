@@ -146,7 +146,60 @@ def crowbar():
     play_again()
 
 def kick():
+    print("The door crashes open with the impact of your kick knocking the zombies to the ground.") 
+    time.sleep(2)
+    print("You try the ignition again, the engine starts and you manage to get away. /n") 
+    time.sleep(2)
+    print("'We have been driving for nearly 2 hours,") 
+    time.sleep(2)
+    print("anywhere we could stop for supplies and resources,") 
+    time.sleep(2)
+    print("Were overcrowded with those things, we had to keep going.") 
+    time.sleep(2)
+    print("Our only option now is make it to A camp and hope theres someone that can help us” /n") 
+    time.sleep(2)
+    print("As you are making you way to a refuge camp you see a car in a ditch") 
+    time.sleep(2)
+    print("with smoke coming from the bonnet and what looks to be a full boot") 
+    time.sleep(2)
+    print("As you stop the car, “what are you doing” jess asks.") 
+    time.sleep(2)
+    print("“there could be something useful in there, we need supplies” you answer.") 
+    time.sleep(2)
+    print("“its not worth it we need to keep going” jess pleads.") 
+    time.sleep(2)
+    print("Get out or keep going. ( g or k )") 
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "g":
+        # take player to cross_roads
+        get_out()
+    elif answer == "k":
+        # take player to play_again()
+        keep_going()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either g or k. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "g":
+        # take player to cross_roads
+            get_out()
+        elif answer == "k":
+        # take player to play_again()
+            keep_going()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def get_out():
     print("hello") 
+
+def keep_going():
+    print("hello")
 
 def back():
     print("hello") 
