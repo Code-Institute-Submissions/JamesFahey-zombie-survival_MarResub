@@ -229,7 +229,7 @@ def get_out():
     answer = input(">").lower().strip()
     if answer == "help":
         # take player to cross_roads
-        help()
+        help_driver()
     elif answer == "walk":
         # take player to play_again()
         walk_away()
@@ -240,7 +240,7 @@ def get_out():
         answer = input(">").lower().strip()
         if answer == "help":
         # take player to cross_roads
-            help()
+            help_driver()
         elif answer == "walk":
         # take player to play_again()
             walk_away()
@@ -249,6 +249,77 @@ def get_out():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             # exit()
+
+def help_driver():
+    print("You want to turn and run but can't leave him there to die.")
+    time.sleep(2)
+    print('"Fuckin ell"')
+    time.sleep(2)
+    print("You help the driver out of the car and into your own.")
+    time.sleep(2)
+    print("You put him in the front seat and jess goes to sit with Joseph.")
+    time.sleep(2)
+    print("You finish loading the supplies and are ready to go.")
+    time.sleep(2)
+    print('"Wait, by my wife, we had some spare fuel in a tank."')
+    time.sleep(2)
+    print("You reach over a grab the fuel and get on your way.")
+    time.sleep(2)
+    print("You avoid the cities as the miles tick by.")
+    time.sleep(2)
+    print("He hasn't said much since we rescued him from the crash.He's slept most of the time, probably due to the blow to the head.")
+    time.sleep(2)
+    print("What would you even say to someone who's just lost his wife, I don't know what I would do if something happened to jess or Joseph.")
+    time.sleep(2)
+    print("It isn't long before you need the fuel the driver told you about. Without it you would of been stranded.")
+    time.sleep(2)
+    print("As you get back in the car you notice sweat pouring from the driver's forehead.")
+    time.sleep(2)
+    print("He has a fever. You begin look him over trying to not alert jess to issue. Then you see it, on his left shoulder, bite marks.")
+    time.sleep(2)
+    print('"I was trying to get her help before she turned" the driver says panting')
+    time.sleep(2)
+    print('You jump back in shock. "So thats how you ended in the ditch, you should of told us you were bitten"')
+    time.sleep(2)
+    print('"Please. Were nearly at the camp, someone could help" His voice getting weaker, his eyes closed again.')
+    time.sleep(2)
+    print('"You need to get out now".... He doesnt respond or move. Just lies motionless in his seat.')
+    time.sleep(2)
+    print("ou need to get him out of the car do you reach across and open the door, or get out and walk around. (reach or around)")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "reach":
+        # take player to cross_roads
+        reach_across()
+    elif answer == "around":
+        # take player to play_again()
+        walk_around()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either g or k. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "reach":
+        # take player to cross_roads
+            reach_across()
+        elif answer == "around":
+        # take player to play_again()
+            walk_around()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def reach_across():
+    print("hello")
+
+def walk_around():
+    print("hello")
+
+def walk_away():
+    print("hello")
 
 def back():
     print("hello") 
