@@ -207,7 +207,48 @@ def keep_going():
     play_again()
 
 def get_out():
-    print("hello")
+    print("As you approach the car you notice 2 bodies. The driver, his head pressed against the steering wheel.")
+    time.sleep(2)
+    print("The passenger has gone head first through the windscreen.")
+    time.sleep(2)
+    print("Your attention turns to the boot off the car, they have food, bottled water and more.")
+    time.sleep(2)
+    print("You grab as much as you can carry, as you turn to head back to your car")
+    time.sleep(2)
+    print('"help me" the weak voice came from the driver.')
+    time.sleep(2)
+    print('"Please help me. Me and my wife.. Oh my god my wife"')
+    time.sleep(2)
+    print("You look back at your car and Joseph in the back, then turn your attention back to the injured driver.")
+    time.sleep(2)
+    print('"Please help me, I think my arm is broke"')
+    time.sleep(2)
+    print("Help the driver or walk away (help or walk)")
+    time.sleep(2)
+    
+    answer = input(">").lower().strip()
+    if answer == "help":
+        # take player to cross_roads
+        help()
+    elif answer == "walk":
+        # take player to play_again()
+        walk_away()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either g or k. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "help":
+        # take player to cross_roads
+            help()
+        elif answer == "walk":
+        # take player to play_again()
+            walk_away()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
 
 def back():
     print("hello") 
