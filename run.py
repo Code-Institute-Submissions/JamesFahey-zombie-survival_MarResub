@@ -9,7 +9,6 @@ def start():
     print("Satellite towers are all down.")
     time.sleep(4)
 
-
     print("We were all looking forward to our camping trip")
     time.sleep(2)
     print("me and Jess wanted to do something nice with Joseph before he started reception")
@@ -313,7 +312,31 @@ def help_driver():
             # exit()
 
 def reach_across():
-    print("hello")
+    print("You reach across slowly trying not to disturb the driver. You pull on the handle and push open the passenger door.")
+    time.sleep(2)
+    print("The drivers eyes open blood shot and yellow and sinks his teeth into your arm.")
+    time.sleep(2)
+    print('"Arggghhh" you yell out in pain and push the driver back in his seat.')
+    time.sleep(2)
+    print("Jess grabs the crowbar from bellow your seat and strikes the driver repeatedly in the head")
+    time.sleep(2)
+    print("until his skull bursts and the driver is dead.")
+    time.sleep(4)
+    print("Not much is said for the rest of the journey, you see the camp ahead and pull over.")
+    time.sleep(2)
+    print("The bite on your arm is throbbing and tiredness is starting to take over.")
+    time.sleep(2)
+    print("Jess gets Joseph out of the car and you stand opposite them. You give them a long hug and a kiss and say your goodbyes.")
+    time.sleep(2)
+    print('"Are you not coming too dad" Joseph asks confused')
+    time.sleep(2)
+    print('"Ill catch ypus up mate, Ive just need to grab something first " you reply trying to remain strong.')
+    time.sleep(2)
+    print("You watch them walk up to the camp soldiers approach with guns. You wait until you see them brought inside then turn and walk away.")
+    time.sleep(2)
+    print("You didn't survive the zombie outbreak but you did get your family to safety.")
+    time.sleep(4)
+    play_again()
 
 def walk_around():
     print("hello")
