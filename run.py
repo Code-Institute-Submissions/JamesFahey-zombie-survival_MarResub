@@ -457,7 +457,15 @@ def camp():
             # exit()
 
 def jump_back():
-    print("hello")
+    print("You jump back but the small confinement of the engine cabin restrict your movement and you can't get out of reach of the zombie.")
+    time.sleep(2)
+    print("It bites your neck and drags you to the ground.")
+    time.sleep(2)
+    print("You lie there unable to cry out for help and unable to break free from the zombie.")
+    time.sleep(2)
+    print("You did not survive the zombie outbreak")
+    time.sleep(4)
+    play_again()
 
 def kick_zombie():
     print("hello")
