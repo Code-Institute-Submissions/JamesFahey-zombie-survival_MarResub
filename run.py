@@ -413,6 +413,53 @@ def back():
             # exit()
 
 def camp():
+    print("The night is long and full of sounds, everyone has you on edge. You lie closest to the door with Joseph inbetween you and jess.")
+    time.sleep(2)
+    print("He sleeps peacefully forgetting all the horror he has seen for a small period of time.")
+    time.sleep(2)
+    print("The next day continues the same as the previous. Progress being slow but quiet.")
+    time.sleep(2)
+    print("You are just about to stop for lunch when you see an abandoned train up ahead.")
+    time.sleep(2)
+    print('"Do you think we can get it going" jess asks')
+    time.sleep(2)
+    print('"Its definitely worth a go" you reply as your steps begin to speed up to a near jog.')
+    time.sleep(2)
+    print("You walk towards the train alone to ensure its safe. You climb into the engine cabin and are greeted with the complicated console and your hope fades.")
+    time.sleep(2)
+    print('"How am I supposed to work out how to get this train started, theres too many dials and levers I dont know where to start"')
+    time.sleep(2)
+    print("From behind you are attacked by a one armed zombie. Do you jump back or kick out at the zombie (j or k")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "j":
+        # take player to cross_roads
+        jump_back()
+    elif answer == "k":
+        # take player to play_again()
+        kick_zombie()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "j":
+        # take player to cross_roads
+            jump_back()
+        elif answer == "k":
+        # take player to play_again()
+            kick_zombie()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def jump_back():
+    print("hello")
+
+def kick_zombie():
     print("hello")
 
 def follow_signs():
