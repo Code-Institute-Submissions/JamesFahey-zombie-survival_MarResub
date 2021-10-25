@@ -373,7 +373,50 @@ def walk_away():
     play_again()
 
 def back():
-    print("hello") 
+    print('"Progress has been slow, but at least its quite and no sign of danger."')
+    time.sleep(2)
+    print('"Its going to be dark soon so well have to stop and set up camp."')
+    time.sleep(2)
+    print('"Theres another one of those signs promising shelter and safety,"')
+    time.sleep(2)
+    print('"it could be better than camping in the woods or by the tracks but Im just not sure"')
+    time.sleep(2)
+    print('"Theres another one of those signs" jess acknowledges')
+    time.sleep(2)
+    print('"I think we should check it out, its not far and we cant risk camping out here by ourselves"')
+    time.sleep(2)
+    print("Camp alone or follow the sign to shelter (camp or follow)")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "camp":
+        # take player to cross_roads
+        camp()
+    elif answer == "follow":
+        # take player to play_again()
+        follow_signs()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either camp or follow. To quit the game press 1")
+        answer = input(">").lower().strip()
+        if answer == "camp":
+        # take player to cross_roads
+            camp()
+        elif answer == "follow":
+        # take player to play_again()
+            follow_signs()
+        elif answer == "1":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def camp():
+    print("hello")
+
+def follow_signs():
+    print("hello")
 
 def stay():
     print("hello")
