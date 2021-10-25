@@ -468,7 +468,27 @@ def jump_back():
     play_again()
 
 def kick_zombie():
-    print("hello")
+    print("You quickly react and kick the zombie back knocking it to the ground.")
+    time.sleep(2)
+    print("You grab a spanner by the console and repeatedly hit the zombie in the head till it stops moving.")
+    time.sleep(2)
+    print("You search the cabin for anything that could help get the engine started. In a cabinet you come across a note pad.")
+    time.sleep(2)
+    print('It looks brand new, hardly any pages have been used and still stiff. Amongst the notes is " first shift 17th October 21."')
+    time.sleep(2)
+    print("That was just 2 days before the outbreak started. On the next page was a step by step guide to start the engine.")
+    time.sleep(2)
+    print("You race back to get Jess and Joseph, then start up the train following the process in the notes.")
+    time.sleep(2)
+    print("As you race along the tracks you look across the open fields and back at your family")
+    time.sleep(2)
+    print("for a brief moment allow yourself to feel safe and share a smile with jess.")
+    time.sleep(2)
+    print("You reach an army blockade who rush you back to the refuge camp")
+    time.sleep(2)
+    print("Congratulations you and your family survived the zombie apocalypse")
+    time.sleep(4)
+    play_again()
 
 def follow_signs():
     print("hello")
