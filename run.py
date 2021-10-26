@@ -9,14 +9,17 @@ def start():
     time.sleep(2)
     print("Satellite towers are all down.")
     time.sleep(4)
+    print()
 
-    print("We were all looking forward to our camping trip")
+    print("\nWe were all looking forward to our camping trip")
     time.sleep(2)
-    print("me and Jess wanted to do something nice with Joseph before he started reception")
+    print("me and Jess wanted to do something nice with Joseph before he")
     time.sleep(2)
-    print("Glad jess likes to be prepared, if it wasn’t for the amount of camping supplies and resources,")
+    print("started reception. Glad jess likes to be prepared, if it ")
     time.sleep(2)
-    print("we wouldn’t of lasted this long.  But we are all but out now and running out of options.")
+    print("wasn’t for the amount of camping supplies and resources, we")
+    time.sleep(2)
+    print("wouldn’t of lasted this long.  But we are all but out now and running out of options.")
     time.sleep(2)
     print("With refuge camps being overrun the last announcement ")
     time.sleep(2)
@@ -55,7 +58,7 @@ def start():
             # exit()
     
 def leave():
-    print("You pack up all remaining food and supplies, wait for it to be clear outside before making your move.")
+    print("\nYou pack up all remaining food and supplies, wait for it to be clear outside before making your move.")
     time.sleep(2)
     print("Do you take the car which could attrack nearby zombies")
     time.sleep(2)
@@ -505,26 +508,11 @@ def stay():
     time.sleep(2)
     print()
 
-    outcome = ["You take the rope upstairs and begin to tie the rope around the bannister \n then a truck of soldiers arrive and save the day \n Congratulations you and your family survived the zombie apocalypse", "You did not survive the zombie outbreak"]
+    outcome = ["You take the rope upstairs and begin to tie the rope around the bannister\n then a truck of soldiers arrive and save the day\n Congratulations you and your family survived the zombie apocalypse", "You did not survive the zombie outbreak"]
     
     print(random.choice(outcome))
     play_again()
 
-    
-    
-    
-    # if outcome == winningOutcome:
-    #     print("you take the rope upstairs and begin to tie the rope around the bannister")
-    #     time.sleep(2)
-    #     print("then a truck of soldiers arrive and save the day")
-    #     time.sleep(2)
-    #     print("Congratulations you and your family survived the zombie apocalypse")
-    #     time.sleep(4)
-    #     play_again()
-    # else:
-    #     print("You did not survive the zombie outbreak")
-    #     time.sleep(4)
-    #     play_again()
 
 def play_again():
     print("Want to try and survive the zombie outbreak again? Y or N")
