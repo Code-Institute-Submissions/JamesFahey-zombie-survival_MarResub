@@ -609,7 +609,7 @@ def stay():
     time.sleep(2)
     print()
 
-    outcome = ["You take the rope upstairs and begin to tie the rope around the bannister\nthen a truck of soldiers arrive and save the day\nCongratulations you and your family survived the zombie apocalypse", "You did not survive the zombie outbreak"]
+    outcome = ['You take the rope upstairs and begin to tie the rope around the bannister\nBang Bang Bang\nGunshots come from outside, you rush downstairs and grap Joseph\nThe gunshots continue then it all falls quiet, you start to wake Jess\when and officer wearing a Racoon City uniform bursts in\nHe helps you get Jess and Joseph into his car and set off\n"Thanks I had given up on anyone showing up" you say unable to hide your guilt\n"Your welcome, I was on my way to the station when i seen the crowd outside your house\ntoday is supposed to be my first day with the RPD. My names Leon\nCongratulations you and your family survived the zombie apocalypse", "You did not survive the zombie outbreak"]
     
     print(random.choice(outcome))
     play_again()
