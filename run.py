@@ -639,6 +639,44 @@ def follow_signs():
     print("Do you attack the guards or free jess (attack or free")
     time.sleep(2)
 
+    answer = input(">").lower().strip()
+    if answer == "attack":
+        # take player to cross_roads
+        attack_guard()
+    elif answer == "free":
+        # take player to play_again()
+        free_jess()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "attack":
+        # take player to cross_roads
+            attack_guard()
+        elif answer == "free":
+        # take player to play_again()
+            free_jess()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def attack_guard():
+    print("4 more days have past,")
+
+def free_jess():
+    print("You rush to jess and begin cutting at her constraints.")
+    time.sleep(2)
+    print("Just as you manage to get her free you are a struck")
+    time.sleep(2)
+    print("across the back of the head with the baseball bat crushing your skull.")
+    time.sleep(2)
+    print("You did not survive the zombie outbreak")
+    time.sleep(4)
+    play_again()
+
 def stay():
     print("4 more days have past,")
     time.sleep(2)
