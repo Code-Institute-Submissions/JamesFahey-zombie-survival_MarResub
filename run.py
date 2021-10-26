@@ -2,6 +2,27 @@ import time
 import random
 
 def start():
+    print("Welcome to Zombie Survival.")
+    time.sleep(2)
+    print("You and your family are doing what you can to survive the horror.")
+    print("Can you make the right choices and get you and your family to safety?")
+    time.sleep(2)
+    print("Do you think you have what it takes to survive? Yes or No")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "yes":
+        print("You are ready... Good luck")
+        time.sleep(3)
+        intro()
+    elif answer == "No":
+        # take player to play_again()
+        print("Too scared to see if you would of made it?")
+        print("Doubt you would of got far anyway")
+        # exit()
+
+
+def intro():
     # Storyline prompts
     print("Airports were the first to close once the outbreak started")
     time.sleep(2)
