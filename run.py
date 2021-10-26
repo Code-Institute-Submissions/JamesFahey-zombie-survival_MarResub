@@ -497,59 +497,34 @@ def follow_signs():
 def stay():
     print("4 more days have past, all rations used and joseph cant stop crying due to hunger. ")
     time.sleep(2)
-
-def chooseOutcome():
-    outcome = ""
-    while outcome != "1" and outcome != "2": # input validation
-        poath = input("Pleaes choose? (1 or 2): ")
-
-    return outcome
-
-def checkOutcome(chosenOutcome):
     print("Jess having not eaten in 3 days can barely keep awake.")
     time.sleep(2)
     print("The constant crying has attracted a large group of zombies and its just a matter of time before they get in.")
     time.sleep(2)
     print("You sit there motionless staring at a camping rope contemplating what choice to make next …")
     time.sleep(2)
+    print()
 
-    winningOutcome = random.randint(1, 2)
-
-    if chosenOutcome == str(winningOutcome):
-        print("you take the rope upstairs and begin to tie the rope around the bannister")
-        time.sleep(2)
-        print("then a truck of soldiers arrive and save the day")
-        time.sleep(2)
-        print("Congratulations you and your family survived the zombie apocalypse")
-        time.sleep(4)
-        play_again()
-    else:
-        print("You did not survive the zombie outbreak")
-        time.sleep(4)
-        play_again()
-
-# def ending():
-#     print("Jess having not eaten in 3 days can barely keep awake.")
-#     time.sleep(2)
-#     print("The constant crying has attracted a large group of zombies and its just a matter of time before they get in.")
-#     time.sleep(2)
-#     print("You sit there motionless staring at a camping rope contemplating what choice to make next …")
-#     time.sleep(2)
+    outcome = ["You take the rope upstairs and begin to tie the rope around the bannister \n then a truck of soldiers arrive and save the day \n Congratulations you and your family survived the zombie apocalypse", "You did not survive the zombie outbreak"]
     
-#     winningOutcome = random.randint(1, 2)
+    print(random.choice(outcome))
+    play_again()
 
-#     if outcome == winningOutcome:
-#         print("you take the rope upstairs and begin to tie the rope around the bannister")
-#         time.sleep(2)
-#         print("then a truck of soldiers arrive and save the day")
-#         time.sleep(2)
-#         print("Congratulations you and your family survived the zombie apocalypse")
-#         time.sleep(4)
-#         play_again()
-#     else:
-#         print("You did not survive the zombie outbreak")
-#         time.sleep(4)
-#         play_again()
+    
+    
+    
+    # if outcome == winningOutcome:
+    #     print("you take the rope upstairs and begin to tie the rope around the bannister")
+    #     time.sleep(2)
+    #     print("then a truck of soldiers arrive and save the day")
+    #     time.sleep(2)
+    #     print("Congratulations you and your family survived the zombie apocalypse")
+    #     time.sleep(4)
+    #     play_again()
+    # else:
+    #     print("You did not survive the zombie outbreak")
+    #     time.sleep(4)
+    #     play_again()
 
 def play_again():
     print("Want to try and survive the zombie outbreak again? Y or N")
@@ -567,7 +542,6 @@ def play_again():
         # return to start()
         start()
 
-while play_again == "yes" or play_again == "y":
+
 start()
-choice = chooseOutcome()
-checkOutcome(choice) # choice is equal to "1" or "2"1
+
