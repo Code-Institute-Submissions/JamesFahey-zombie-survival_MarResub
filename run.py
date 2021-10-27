@@ -664,7 +664,141 @@ def follow_signs():
             # exit()
 
 def attack_guard():
-    print("4 more days have past,")
+    print("You dive at the man with bat before he has a chance to react and stab him in the throat")
+    time.sleep(2)
+    print("The other drops his knife a begs you not to hurt him. ")
+    time.sleep(2)
+    print('“Where is my son” you demand' )
+    time.sleep(2)
+    print('“hes in the other room, we haven’t touched him I swear” he stutters back' )
+    time.sleep(2)
+    print("Let him live or kill him (live or kill")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "live":
+        # take player to cross_roads
+        let_live()
+    elif answer == "kill":
+        # take player to play_again()
+        kill()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "live":
+        # take player to cross_roads
+            let_live()
+        elif answer == "kill":
+        # take player to play_again()
+            kill()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def let_live():
+    print("You punch the guard in the face knocking him unconscious")
+    time.sleep(2)
+    print("You quickly free Jess and rush to get Harry")
+    time.sleep(2)
+    print("He is in the next room as the guard said, unharmed surrounded")
+    time.sleep(2)
+    print("by butchered human bodies hung up like pigs.")
+    time.sleep(2)
+    print('“Who the hell are these people” jess asks in disbelief.')
+    time.sleep(2)
+    print('“These aren’t people” you answer in disgust. You grab harry and turn to run,')
+    time.sleep(2)
+    print("do you leave via the main doors or down the corridor to the left")
+    time.sleep(2)
+    print("Main or Corridor")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "main":
+        # take player to cross_roads
+        main_doors()
+    elif answer == "corridor":
+        # take player to play_again()
+        corridor()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "main":
+        # take player to cross_roads
+            main_doors()
+        elif answer == "corridor":
+        # take player to play_again()
+            corridor()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def kill():
+    print("You don’t say another word and thrust your knife into his stomach multiple times")
+    time.sleep(2)
+    print("You quickly free Jess and rush to get Harry")
+    time.sleep(2)
+    print("He is in the next room as the guard said, unharmed surrounded")
+    time.sleep(2)
+    print("by butchered human bodies hung up like pigs.")
+    time.sleep(2)
+    print('“Who the hell are these people” jess asks in disbelief.')
+    time.sleep(2)
+    print('“These aren’t people” you answer in disgust. You grab harry and turn to run,')
+    time.sleep(2)
+    print("do you leave via the main doors or down the corridor to the left")
+    time.sleep(2)
+    print("Main or Corridor")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "main":
+        # take player to cross_roads
+        main_doors()
+    elif answer == "corridor":
+        # take player to play_again()
+        corridor()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "main":
+        # take player to cross_roads
+            main_doors()
+        elif answer == "corridor":
+        # take player to play_again()
+            corridor()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+def main_doors():
+    print("You burst through the main doors, leading to the front gate")
+    time.sleep(2)
+    print("straight into a hoard of zombies")
+    time.sleep(2)
+    print("The explosion blew a hole in the yards fences allowing the hoard to enter.")
+    time.sleep(2)
+    print("You try and push Alex and harry Free but to no avail ")
+    time.sleep(2)
+    print("You did not survive the zombie outbreak")
+    time.sleep(4)
+    play_again()
+
+def corridor():
+    print("You rush to jess and begin cutting at her constraints.")
+    time.sleep(2)
 
 def free_jess():
     print("You rush to jess and begin cutting at her constraints.")
