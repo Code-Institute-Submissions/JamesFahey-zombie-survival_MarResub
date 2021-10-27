@@ -797,8 +797,70 @@ def main_doors():
     play_again()
 
 def corridor():
-    print("You rush to jess and begin cutting at her constraints.")
+    print("You make your way down the corridor.")
     time.sleep(2)
+    print("Occupants of the facility can be heard panicking and screaming.")
+    time.sleep(2)
+    print("Then you see it, the window looking over the main courtyard reveals")
+    time.sleep(2)
+    print("it has been overrun with a hoard of zombies.")
+    time.sleep(2)
+    print("The explosion blew a hole in the yards fences and allowed them to enter. ")
+    time.sleep(2)
+    print("You scale the back fence avoiding zombies and any other inhabitants and escape.")
+    time.sleep(2)
+    print('"From now on we stick to camping" you say to break the silence')
+    time.sleep(4)
+    print("\nThe next day continues the same as the previous. Progress being slow but quiet.")
+    time.sleep(2)
+    print("You are just about to stop for lunch when you see an abandoned train up ahead.")
+    time.sleep(2)
+    print('"Do you think we can get it going" Jess asks')
+    time.sleep(2)
+    print('"Its definitely worth a go" you reply as your steps begin to speed up to a near jog.')
+    time.sleep(2)
+    print("\nYou walk towards the train alone to ensure its safe. ")
+    time.sleep(2)
+    print("You climb into the engine cabin and are greeted with the complicated console and your hope fades.")
+    time.sleep(2)
+    print('"How am I supposed to work out how to get this train started,')
+    time.sleep(2)
+    print('theres too many dials and levers I dont know where to start"')
+    time.sleep(2)
+    print("You stare out of the cabin window wondering if you will ever catch a break.")
+    time.sleep(2)
+    print("You let your guard down for a moment then in the reflection you see movement")
+    time.sleep(2)
+    print("As you spin round the zombie dives at you")
+    time.sleep(2)
+    print("Do you jump back or kick out at the zombie (j or k")
+    time.sleep(2)
+
+    answer = input(">").lower().strip()
+    if answer == "j":
+        # take player to cross_roads
+        jump_back()
+    elif answer == "k":
+        # take player to play_again()
+        kick_zombie()
+    else:
+        # else return player to start()
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either j or k. To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "j":
+        # take player to cross_roads
+            jump_back()
+        elif answer == "k":
+        # take player to play_again()
+            kick_zombie()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            # exit()
+
+
 
 def free_jess():
     print("You rush to jess and begin cutting at her constraints.")
