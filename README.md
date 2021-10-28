@@ -28,9 +28,9 @@ Predominantly aiming towards zombie horror fanbases, but also designed to appeal
 
 • I want to provide the user with clear gameplay instructions.
 
-• I want to be inclusive to everyone and include gender neutral characters
+• I want to be  be inclusive to everyone and included unisex names, to allow the player to assign themselves to either the mum/dad role
 
-• I want to provide the user with a game that can be played multiple times and still feel different 
+• I want to provide the user with a game that can be played multiple times and provide numerous experiences dependent upon user choices.  
 
 • Have the opportunity of either friends/family but also an AI as an opponent. 
 
@@ -44,9 +44,9 @@ Predominantly aiming towards zombie horror fanbases, but also designed to appeal
 
 • I want the game to have a compelling story
 
-• I want the game to have multiple outcomes
+• I want the game to establish a clear win or lose protocol, in the form of survival or death
 
-• I want the game to have some reference to popular zombie culture
+• I want the game to have some reference to popular zombie culture. Communicating a sense of familiarity but new challenges 
 
 • Once the game is completed, I want an option to play again
 
@@ -89,13 +89,13 @@ Once the game has begun the user will be provided with the back story of the gam
 
 ## Functions
 
-Again, the choice of image was carefully selected to perpetuate the previously mentioned theme of conflict. 
+The game will progress with use of functions. Functions of individual chapters will trigger story progression. Giving the user opportunity to interact with the other survivors or reflect on decisions made and contemplate what’s still to come. Each function will end when the user is faced  with another choice to make to continue the story.
 
 ![Functions](/readme-images/function.png)
 
 ## Choices 
 
-Each choice will consist of two options representing two different paths the user can take. The choice made will either continue their journey of survival or cut it short resulting in the user not surviving and getting game over. Once the story comes to an end whether it be successful or not the user will be asked whether they would like to play again. If yes the user will begin the game again
+Each choice will consist of two options representing two different paths the user can take. The choice made will either continue their journey of survival or cut it short resulting in the user not surviving and getting game over message. Once the story comes to an end whether it be successful or not the user will be asked whether they would like to play again. Selecting yes restarts the game. 
 
 ![Choices](/readme-images/choice.png)
 
@@ -158,9 +158,9 @@ I have manually tested this project by doing the following:
 
 The simple mechanics of the game allow the user to shape the story by typing their answers when prompted 
 
-• I want to create an immersive story causing the user to feel weight to each choice being made.
+• I want to create an immersive story causing the user to feel ignificance to each choice.
 
-The story from the beginning adds extra weight for your choices as you are not only making decisions for yourself but also your family. You are put in dangerous and life-threatening situations and you must navigate yourself and family through them 
+The initial story adds extra importance and provides the user with an increased sense of responsibility, as decisions implicate not only affect yourself but also your family.  You are put in dangerous and life-threatening situations and you must navigate yourself and family through them 
 
 • I want to provide the user with clear gameplay instructions
 
@@ -170,9 +170,9 @@ The user is prompted when and what to input to progress the story
 
 With the multiple paths created the user can play several times and not reach the same outcome or path
 
-• I want to be inclusive to everyone and included gender neutral characters
+•  I want to be inclusive to everyone and allow all users to connect with the main character. 
 
-Your partner in the game is called Alex and child Harry so the user’s character could be male or female 
+Your partner in the game is called Alex and child Harry so the user’s character could be male or female. Relationship to Alex is left relatively undefined, allowing the user to establish their own affiliation.   
 
 ### As a new user:
 
@@ -180,7 +180,7 @@ Your partner in the game is called Alex and child Harry so the user’s characte
 
 The user is prompted when and what to input to progress the story
 
-• I want the game to set the scene drawing me into the story
+• I want the game to effectively set the scene
 
 After the user confirms they want to play the intro to the game and story will begin. This will provide the user a background to the events of the game as well as some character development
 
