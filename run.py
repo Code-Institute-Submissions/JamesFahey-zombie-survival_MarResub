@@ -592,7 +592,7 @@ def back():
 
 
 def camp():
-    print("\nThe night is long and full of sounds, everyone has you on edge.")
+    print("\nThe night is long and full of sounds, every one has you on edge.")
     time.sleep(a)
     print("You lie closest to the door with Harry inbetween you and Alex.")
     time.sleep(a)
@@ -1082,7 +1082,7 @@ def stay():
 
     outcome = ['You take the rope upstairs and begin to tie the rope around' 
                ' the bannister. Bang Bang Bang. Gunshots come from outside,'
-               " you rush downstairs and grap Harry. The gunshots continue"
+               " you rush downstairs and grab Harry. The gunshots continue"
                " then it all falls quiet, you start to wake Alex"
                " when an officer wearing a Racoon City uniform bursts in." 
                ' \nHe helps you get Alex and Harry into his car and '
