@@ -6,17 +6,19 @@ a = 2
 b = 3
 c = 4
 
+
 def clear_console():
     """
     Clears the console.
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
 def start():
     clear_console()
     print("Welcome to Zombie Survival.")
     time.sleep(a)
-    print("\nYou and your family are doing what you can to survive the horror.")
+    print("\nYou and your family are doing what you can to survive the horror")
     print("Can you make the right choices")
     print("to get you and your family to safety?")
     time.sleep(a)
@@ -1062,7 +1064,7 @@ def free_jess():
 
 
 def stay():
-    print("4 more days have past,")
+    print("\n4 more days have past,")
     time.sleep(a)
     print("all rations used and Joseph cant stop crying due to hunger. ")
     time.sleep(a)
