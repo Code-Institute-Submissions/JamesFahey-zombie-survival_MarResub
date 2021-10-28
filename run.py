@@ -16,26 +16,43 @@ def start():
     print("Can you make the right choices")
     print("to get you and your family to safety?")
     time.sleep(2)
-    print("\nDo you think you have what it takes to survive? Yes or No")
+    print("\nDo you think you have what it takes to survive? Y or N")
     time.sleep(2)
 
     answer = input(">").lower().strip()
-    if answer == "yes":
+    if answer == "y":
+        # take player to intro()
         print("You are ready... Good luck")
         time.sleep(3)
         intro()
-    elif answer == "No":
-        # take player to play_again()
+    elif answer == "n":
+        # else return player to start()
         print("Too scared to see if you would of made it?")
         print("Doubt you would of got far anyway")
-        play_again()
-    else:
-        # else return player to start()
+        time.sleep(2)
         start()
+    else:
+        # validate incorrect input
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either y or n.")
+        print("\n To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "y":
+            # take player to intro
+            intro()()
+        elif answer == "n":
+            # take player to start()
+            start()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            start()
 
 
 def intro():
     # Storyline prompts
+    clear_console()
     print("\nAirports were the first to close once the outbreak started")
     time.sleep(2)
     print("soon all major motorways were barricaded off, that was a week ago")
@@ -70,31 +87,32 @@ def intro():
 
     answer = input(">").lower().strip()
     if answer == "stay":
-        # take player to cross_roads
+        # take player to stay()
         stay()
     elif answer == "leave":
-        # take player to play_again()
+        # take player to leave()
         leave()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either stay or leave.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "stay":
-            # take player to cross_roads
+            # take player to stay()
             stay()
         elif answer == "leave":
-            # take player to play_again()
+            # take player to leave()
             leave()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
     
     
 def leave():
+    clear_console()
     print("\nYou pack up all remaining food and supplies,")
     time.sleep(2)
     print("then wait for it to be clear outside before making your move.")
@@ -107,31 +125,32 @@ def leave():
 
     answer = input(">").lower().strip()
     if answer == "car":
-        # take player to cross_roads
+        # take player to car()
         car()
     elif answer == "back":
-        # take player to play_again()
+        # take player to back()
         back()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either car or back.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "car":
-            # take player to cross_roads
+            # take player to car()
             car()
         elif answer == "back":
-            # take player to play_again()
+            # take player to back()
             back()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def car():
+    clear_console()
     print("\nYou load the supplies into the car,")
     time.sleep(2)
     print("jess straps Joseph into his car seat.")
@@ -158,32 +177,33 @@ def car():
 
     answer = input(">").lower().strip()
     if answer == "kick":
-        # take player to cross_roads
+        # take player to kick()
         kick()
     elif answer == "crowbar":
-        # take player to play_again()
+        # take player to crowbar()
         crowbar()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either kick or crowbar.")
         print("\n To quit the game press q")
         
         answer = input(">").lower().strip()
         if answer == "kick":
-            # take player to cross_roads
+            # take player to kick()
             kick()
         elif answer == "crowbar":
-            # take player to play_again()
+            # take player to crowbar()
             crowbar()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def crowbar():
+    clear_console()
     print("\nYou reach under your chair,")
     time.sleep(2)
     print("frantically trying to grab your crowbar.")
@@ -204,6 +224,7 @@ def crowbar():
 
 
 def kick():
+    clear_console()
     print("\nThe door crashes open with the impact of your kick knocking") 
     time.sleep(2)
     print("the zombies to the ground. You try the ignition again,") 
@@ -239,31 +260,32 @@ def kick():
 
     answer = input(">").lower().strip()
     if answer == "g":
-        # take player to cross_roads
+        # take player to get_out()
         get_out()
     elif answer == "k":
-        # take player to play_again()
+        # take player to keep_going()
         keep_going()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either g or k.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "g":
-            # take player to cross_roads
+            # take player to get_out()
             get_out()
         elif answer == "k":
-            # take player to play_again()
+            # take player to keep_going()
             keep_going()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def keep_going():
+    clear_console()
     print("\nYou avoid cities to stay clear of the hoards")
     time.sleep(2)
     print("as the miles tick by and night falls.")
@@ -280,6 +302,7 @@ def keep_going():
 
 
 def get_out():
+    clear_console()
     print("\nAs you approach the car you notice 2 bodies.")
     time.sleep(2)
     print("The driver, his head pressed against the steering wheel.")
@@ -309,31 +332,32 @@ def get_out():
     
     answer = input(">").lower().strip()
     if answer == "help":
-        # take player to cross_roads
+        # take player to help_driver()
         help_driver()
     elif answer == "walk":
-        # take player to play_again()
+        # take player to walk_away()
         walk_away()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either help or walk.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "help":
-            # take player to cross_roads
+            # take player to help_driver()
             help_driver()
         elif answer == "walk":
-            # take player to play_again()
+            # take player to walk_away()
             walk_away()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def help_driver():
+    clear_console()
     print("You want to turn and run but can't leave him there to die.")
     time.sleep(2)
     print('"Fuckin ell"')
@@ -397,31 +421,32 @@ def help_driver():
 
     answer = input(">").lower().strip()
     if answer == "reach":
-        # take player to cross_roads
+        # take player to reach_across()
         reach_across()
     elif answer == "around":
-        # take player to play_again()
+        # take player to walk_around()
         walk_around()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either reach or around.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "reach":
-            # take player to cross_roads
+            # take player to reach_across()
             reach_across()
         elif answer == "around":
-            # take player to play_again()
+            # take player to walk_around()
             walk_around()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def reach_across():
+    clear_console()
     print("\nYou reach across slowly trying not to disturb the driver.")
     time.sleep(2)
     print("\You pull on the handle and push open the passenger door.")
@@ -469,6 +494,7 @@ def reach_across():
 
 
 def walk_around():
+    clear_console()
     print("\nYou do not risk reaching across the driver.")
     time.sleep(2)
     print("You get out and start walking round to the other side.")
@@ -497,6 +523,7 @@ def walk_around():
 
 
 def walk_away():
+    clear_console()
     print("\nYou turn and walk to the car not looking back.")
     time.sleep(2)
     print("You quickly load the supplies in in car and get moving.")
@@ -521,6 +548,7 @@ def walk_away():
 
 
 def back():
+    clear_console()
     print('\n"Progress has been slow, but at least')
     time.sleep(2)
     print('its quiet and no sign of danger.')
@@ -544,31 +572,32 @@ def back():
 
     answer = input(">").lower().strip()
     if answer == "camp":
-        # take player to cross_roads
+        # take player to camp()
         camp()
     elif answer == "follow":
-        # take player to play_again()
+        # take player to follow_signs()
         follow_signs()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either camp or follow.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "camp":
-            # take player to cross_roads
+            # take player to camp()
             camp()
         elif answer == "follow":
-            # take player to play_again()
+            # take player to follow_signs()
             follow_signs()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def camp():
+    clear_console()
     print("\nThe night is long and full of sounds, everyone has you on edge.")
     time.sleep(2)
     print("You lie closest to the door with Joseph inbetween you and Jess.")
@@ -614,31 +643,32 @@ def camp():
 
     answer = input(">").lower().strip()
     if answer == "j":
-        # take player to cross_roads
+        # take player to jump_back()
         jump_back()
     elif answer == "k":
-        # take player to play_again()
+        # take player to kick_zombie()
         kick_zombie()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either j or k.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "j":
-            # take player to cross_roads
+            # take player to jump_back()
             jump_back()
         elif answer == "k":
-            # take player to play_again()
+            # take player to kick_zombie()
             kick_zombie()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def jump_back():
+    clear_console()
     print("\nYou jump back but the small confinement")
     time.sleep(2)
     print("of the engine cabin restricts your movement")
@@ -657,6 +687,7 @@ def jump_back():
 
 
 def kick_zombie():
+    clear_console()
     print("\nYou quickly react and kick the zombie back")
     time.sleep(2)
     print("knocking it to the ground.")
@@ -699,6 +730,7 @@ def kick_zombie():
 
 
 def follow_signs():
+    clear_console()
     print("\nAgainst your better judgment you make a turn up ahead")
     time.sleep(2)
     print("following the signs promising shelter and safety.")
@@ -768,31 +800,32 @@ def follow_signs():
 
     answer = input(">").lower().strip()
     if answer == "attack":
-        # take player to cross_roads
+        # take player to attack_guard()
         attack_guard()
     elif answer == "free":
-        # take player to play_again()
+        # take player to free_jess()
         free_jess()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
-        print("\n To continue playing type either j or k.")
+        print("\n To continue playing type either attack or free.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "attack":
-            # take player to cross_roads
+            # take player to attack_guard()
             attack_guard()
         elif answer == "free":
-            # take player to play_again()
+            # take player to free_jess()
             free_jess()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def attack_guard():
+    clear_console()
     print("\nYou dive at the man with bat before he has a chance to react")
     time.sleep(2)
     print("and stab him in the throat")
@@ -810,31 +843,32 @@ def attack_guard():
 
     answer = input(">").lower().strip()
     if answer == "live":
-        # take player to cross_roads
+        # take player to let_live()
         let_live()
     elif answer == "kill":
-        # take player to play_again()
+        # take player to kill()
         kill()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
-        print("\n To continue playing type either j or k.")
+        print("\n To continue playing type either live or kill.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "live":
-            # take player to cross_roads
+            # take player to let_live()
             let_live()
         elif answer == "kill":
-            # take player to play_again()
+            # take player to kill()
             kill()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def let_live():
+    clear_console()
     print("\nYou punch the guard in the face knocking him unconscious")
     time.sleep(2)
     print("You quickly free Jess and rush to get Joseph")
@@ -856,19 +890,19 @@ def let_live():
 
     answer = input(">").lower().strip()
     if answer == "main":
-        # take player to cross_roads
+        # take player to main_doors()
         main_doors()
     elif answer == "corridor":
-        # take player to play_again()
+        # take player to corridor()
         corridor()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
-        print("\n To continue playing type either j or k.")
+        print("\n To continue playing type either main or corridor.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "main":
-            # take player to cross_roads
+            # take player to main_doors()
             main_doors()
         elif answer == "corridor":
             # take player to play_again()
@@ -877,10 +911,11 @@ def let_live():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def kill():
+    clear_console()
     print("\nYou don’t say another word")
     time.sleep(2)
     print("and thrust your knife into his stomach multiple times")
@@ -904,31 +939,32 @@ def kill():
 
     answer = input(">").lower().strip()
     if answer == "main":
-        # take player to cross_roads
+        # take player to main_doors()
         main_doors()
     elif answer == "corridor":
-        # take player to play_again()
+        # take player to corridor()
         corridor()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
-        print("\n To continue playing type either j or k.")
+        print("\n To continue playing type either main or corridor.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "main":
-            # take player to cross_roads
+            # take player to main_doors()
             main_doors()
         elif answer == "corridor":
-            # take player to play_again()
+            # take player to corridor()
             corridor()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def main_doors():
+    clear_console()
     print("\nYou burst through the main doors, leading to the front gate")
     time.sleep(2)
     print("straight into a hoard of zombies")
@@ -945,6 +981,7 @@ def main_doors():
 
 
 def corridor():
+    clear_console()
     print("\nYou make your way down the corridor.")
     time.sleep(2)
     print("Occupants of the facility can be heard panicking and screaming.")
@@ -1002,31 +1039,32 @@ def corridor():
 
     answer = input(">").lower().strip()
     if answer == "j":
-        # take player to cross_roads
+        # take player to jump_back()
         jump_back()
     elif answer == "k":
-        # take player to play_again()
+        # take player to kick_zombie()
         kick_zombie()
     else:
-        # else return player to start()
+        # validate incorrect input
         print("\n Incorrect Answer")
         print("\n To continue playing type either j or k.")
         print("\n To quit the game press q")
         answer = input(">").lower().strip()
         if answer == "j":
-            # take player to cross_roads
+            # take player to jump_back()
             jump_back()
         elif answer == "k":
-            # take player to play_again()
+            # take player to kick_zombie()
             kick_zombie()
         elif answer == "q":
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
-            # exit()
+            start()
 
 
 def free_jess():
+    clear_console()
     print("You rush to jess and begin cutting at her constraints.")
     time.sleep(2)
     print("Just as you manage to get her free you are a struck")
@@ -1041,6 +1079,7 @@ def free_jess():
 
 
 def stay():
+    clear_console()
     print("4 more days have past,")
     time.sleep(2)
     print("all rations used and Joseph cant stop crying due to hunger. ")
@@ -1077,6 +1116,7 @@ def stay():
 
 
 def play_again():
+    clear_console()
     print("Want to try and survive the zombie outbreak again? Y or N")
     # convert the player's input to lower_case
     answer = input(">").lower().strip()
@@ -1087,10 +1127,25 @@ def play_again():
         # exit() the program
         print("Too scared to see if you would of made it?")
         print("Doubt you would of got far anyway")
-        # exit()
+        start()
     else:
         # return to start()
-        start()
+        # validate incorrect input
+        print("\n Incorrect Answer")
+        print("\n To continue playing type either y or n.")
+        print("\n To quit the game press q")
+        answer = input(">").lower().strip()
+        if answer == "y":
+            # take player to cross_roads
+            intro()
+        elif answer == "n":
+            # take player to play_again()
+            start()
+        elif answer == "q":
+            # allow player to exit
+            print("Too scared to see if you would of made it?")
+            print("Doubt you would of got far anyway")
+            start()
 
 
 start()
