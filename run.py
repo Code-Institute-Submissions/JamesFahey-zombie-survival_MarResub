@@ -112,7 +112,6 @@ def intro():
     
     
 def leave():
-    clear_console()
     print("\nYou pack up all remaining food and supplies,")
     time.sleep(2)
     print("then wait for it to be clear outside before making your move.")
@@ -150,7 +149,6 @@ def leave():
 
 
 def car():
-    clear_console()
     print("\nYou load the supplies into the car,")
     time.sleep(2)
     print("jess straps Joseph into his car seat.")
@@ -203,7 +201,6 @@ def car():
 
 
 def crowbar():
-    clear_console()
     print("\nYou reach under your chair,")
     time.sleep(2)
     print("frantically trying to grab your crowbar.")
@@ -224,7 +221,6 @@ def crowbar():
 
 
 def kick():
-    clear_console()
     print("\nThe door crashes open with the impact of your kick knocking") 
     time.sleep(2)
     print("the zombies to the ground. You try the ignition again,") 
@@ -285,7 +281,6 @@ def kick():
 
 
 def keep_going():
-    clear_console()
     print("\nYou avoid cities to stay clear of the hoards")
     time.sleep(2)
     print("as the miles tick by and night falls.")
@@ -302,7 +297,6 @@ def keep_going():
 
 
 def get_out():
-    clear_console()
     print("\nAs you approach the car you notice 2 bodies.")
     time.sleep(2)
     print("The driver, his head pressed against the steering wheel.")
@@ -357,7 +351,6 @@ def get_out():
 
 
 def help_driver():
-    clear_console()
     print("You want to turn and run but can't leave him there to die.")
     time.sleep(2)
     print('"Fuckin ell"')
@@ -446,7 +439,6 @@ def help_driver():
 
 
 def reach_across():
-    clear_console()
     print("\nYou reach across slowly trying not to disturb the driver.")
     time.sleep(2)
     print("\You pull on the handle and push open the passenger door.")
@@ -494,7 +486,6 @@ def reach_across():
 
 
 def walk_around():
-    clear_console()
     print("\nYou do not risk reaching across the driver.")
     time.sleep(2)
     print("You get out and start walking round to the other side.")
@@ -523,7 +514,6 @@ def walk_around():
 
 
 def walk_away():
-    clear_console()
     print("\nYou turn and walk to the car not looking back.")
     time.sleep(2)
     print("You quickly load the supplies in in car and get moving.")
@@ -548,7 +538,6 @@ def walk_away():
 
 
 def back():
-    clear_console()
     print('\n"Progress has been slow, but at least')
     time.sleep(2)
     print('its quiet and no sign of danger.')
@@ -597,7 +586,6 @@ def back():
 
 
 def camp():
-    clear_console()
     print("\nThe night is long and full of sounds, everyone has you on edge.")
     time.sleep(2)
     print("You lie closest to the door with Joseph inbetween you and Jess.")
@@ -668,7 +656,6 @@ def camp():
 
 
 def jump_back():
-    clear_console()
     print("\nYou jump back but the small confinement")
     time.sleep(2)
     print("of the engine cabin restricts your movement")
@@ -687,7 +674,6 @@ def jump_back():
 
 
 def kick_zombie():
-    clear_console()
     print("\nYou quickly react and kick the zombie back")
     time.sleep(2)
     print("knocking it to the ground.")
@@ -730,7 +716,6 @@ def kick_zombie():
 
 
 def follow_signs():
-    clear_console()
     print("\nAgainst your better judgment you make a turn up ahead")
     time.sleep(2)
     print("following the signs promising shelter and safety.")
@@ -825,7 +810,6 @@ def follow_signs():
 
 
 def attack_guard():
-    clear_console()
     print("\nYou dive at the man with bat before he has a chance to react")
     time.sleep(2)
     print("and stab him in the throat")
@@ -868,7 +852,6 @@ def attack_guard():
 
 
 def let_live():
-    clear_console()
     print("\nYou punch the guard in the face knocking him unconscious")
     time.sleep(2)
     print("You quickly free Jess and rush to get Joseph")
@@ -915,7 +898,6 @@ def let_live():
 
 
 def kill():
-    clear_console()
     print("\nYou don’t say another word")
     time.sleep(2)
     print("and thrust your knife into his stomach multiple times")
@@ -964,7 +946,6 @@ def kill():
 
 
 def main_doors():
-    clear_console()
     print("\nYou burst through the main doors, leading to the front gate")
     time.sleep(2)
     print("straight into a hoard of zombies")
@@ -981,7 +962,6 @@ def main_doors():
 
 
 def corridor():
-    clear_console()
     print("\nYou make your way down the corridor.")
     time.sleep(2)
     print("Occupants of the facility can be heard panicking and screaming.")
@@ -1064,7 +1044,6 @@ def corridor():
 
 
 def free_jess():
-    clear_console()
     print("You rush to jess and begin cutting at her constraints.")
     time.sleep(2)
     print("Just as you manage to get her free you are a struck")
@@ -1079,7 +1058,6 @@ def free_jess():
 
 
 def stay():
-    clear_console()
     print("4 more days have past,")
     time.sleep(2)
     print("all rations used and Joseph cant stop crying due to hunger. ")
@@ -1116,7 +1094,6 @@ def stay():
 
 
 def play_again():
-    clear_console()
     print("Want to try and survive the zombie outbreak again? Y or N")
     # convert the player's input to lower_case
     answer = input(">").lower().strip()
