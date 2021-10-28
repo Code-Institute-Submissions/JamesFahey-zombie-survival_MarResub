@@ -1,8 +1,15 @@
 import time
 import random
+import os
 
+def clear_console():
+    """
+    Clears the console.
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def start():
+    clear_console()
     print("Welcome to Zombie Survival.")
     time.sleep(2)
     print("\nYou and your family are doing what you can to survive the horror.")
