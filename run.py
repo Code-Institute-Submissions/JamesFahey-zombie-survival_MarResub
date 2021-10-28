@@ -5,11 +5,11 @@ import random
 def start():
     print("Welcome to Zombie Survival.")
     time.sleep(2)
-    print("You and your family are doing what you can to survive the horror.")
+    print("\nYou and your family are doing what you can to survive the horror.")
     print("Can you make the right choices")
     print("to get you and your family to safety?")
     time.sleep(2)
-    print("Do you think you have what it takes to survive? Yes or No")
+    print("\nDo you think you have what it takes to survive? Yes or No")
     time.sleep(2)
 
     answer = input(">").lower().strip()
@@ -21,7 +21,10 @@ def start():
         # take player to play_again()
         print("Too scared to see if you would of made it?")
         print("Doubt you would of got far anyway")
-        # exit()
+        play_again()
+    else:
+        # else return player to start()
+        start()
 
 
 def intro():
@@ -1072,7 +1075,7 @@ def play_again():
     answer = input(">").lower().strip()
     if answer == "y":
         # take player to start()
-        start()
+        intro()
     elif answer == "n":
         # exit() the program
         print("Too scared to see if you would of made it?")
