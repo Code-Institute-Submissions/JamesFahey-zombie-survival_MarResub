@@ -91,13 +91,13 @@ Once the game has begun the user will be provided with the back story of the gam
 
 Again, the choice of image was carefully selected to perpetuate the previously mentioned theme of conflict. 
 
-![Functions](/readme-images/functions.png)
+![Functions](/readme-images/function.png)
 
 ## Choices 
 
 Each choice will consist of two options representing two different paths the user can take. The choice made will either continue their journey of survival or cut it short resulting in the user not surviving and getting game over. Once the story comes to an end whether it be successful or not the user will be asked whether they would like to play again. If yes the user will begin the game again
 
-![Choices](/readme-images/choices.png)
+![Choices](/readme-images/choice.png)
 
 ## Random Outcome 
 
