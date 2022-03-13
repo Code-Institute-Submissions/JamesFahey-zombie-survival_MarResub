@@ -54,6 +54,8 @@ def start():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
+        else:
+            start()
 
 
 def intro():
@@ -115,8 +117,10 @@ def intro():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
-    
-    
+        else:
+            start()
+
+
 def leave():
     print("\nYou pack up all remaining food and supplies,")
     time.sleep(a)
@@ -151,6 +155,8 @@ def leave():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -191,7 +197,7 @@ def car():
         print("\n Incorrect Answer")
         print("\n To continue playing type either kick or crowbar.")
         print("\n To quit the game press q")
-        
+
         answer = input(">").lower().strip()
         if answer == "kick":
             # take player to kick()
@@ -203,6 +209,8 @@ def car():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -227,37 +235,37 @@ def crowbar():
 
 
 def kick():
-    print("\nThe door crashes open with the impact of your kick knocking") 
+    print("\nThe door crashes open with the impact of your kick knocking")
     time.sleep(a)
-    print("the zombies to the ground. You try the ignition again,") 
+    print("the zombies to the ground. You try the ignition again,")
     time.sleep(a)
-    print("the engine starts and you manage to get away.") 
+    print("the engine starts and you manage to get away.")
     time.sleep(a)
-    print('\n"We have been driving for nearly 2 hours,') 
+    print('\n"We have been driving for nearly 2 hours,')
     time.sleep(a)
-    print("anywhere we could stop for supplies and resources,") 
+    print("anywhere we could stop for supplies and resources,")
     time.sleep(a)
-    print("Were overcrowded with those things, we had to keep going.") 
+    print("Were overcrowded with those things, we had to keep going.")
     time.sleep(a)
-    print('Our only option now is make it to a camp') 
+    print('Our only option now is make it to a camp')
     time.sleep(a)
-    print('and hope theres someone that can help us"') 
+    print('and hope theres someone that can help us"')
     time.sleep(a)
-    print("\nAs you are making you way to a refuge camp") 
+    print("\nAs you are making you way to a refuge camp")
     time.sleep(a)
-    print("you see a car in a ditch") 
+    print("you see a car in a ditch")
     time.sleep(a)
-    print("smoke coming from the bonnet and what looks to be a full boot") 
+    print("smoke coming from the bonnet and what looks to be a full boot")
     time.sleep(a)
-    print("As you stop the car, “what are you doing” Alex asks.") 
+    print("As you stop the car, “what are you doing” Alex asks.")
     time.sleep(a)
-    print("“there could be something useful in there,") 
+    print("“there could be something useful in there,")
     time.sleep(a)
-    print('we need supplies” you answer.') 
+    print('we need supplies” you answer.')
     time.sleep(a)
-    print("“its not worth it we need to keep going” Alex pleads.") 
+    print("“its not worth it we need to keep going” Alex pleads.")
     time.sleep(a)
-    print("Get out or keep going. ( g or k )") 
+    print("Get out or keep going. ( g or k )")
     time.sleep(a)
 
     answer = input(">").lower().strip()
@@ -283,6 +291,8 @@ def kick():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -329,7 +339,7 @@ def get_out():
     time.sleep(a)
     print("Help the driver or walk away (help or walk)")
     time.sleep(a)
-    
+
     answer = input(">").lower().strip()
     if answer == "help":
         # take player to help_driver()
@@ -353,6 +363,8 @@ def get_out():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -441,6 +453,8 @@ def help_driver():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -589,6 +603,8 @@ def back():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
+        else:
+            start()
 
 
 def camp():
@@ -658,6 +674,8 @@ def camp():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -813,6 +831,8 @@ def follow_signs():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
+        else:
+            start()
 
 
 def attack_guard():
@@ -854,6 +874,8 @@ def attack_guard():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -900,6 +922,8 @@ def let_live():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -948,6 +972,8 @@ def kill():
             # allow player to exit
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
+            start()
+        else:
             start()
 
 
@@ -1047,6 +1073,8 @@ def corridor():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
+        else:
+            start()
 
 
 def free_alex():
@@ -1080,11 +1108,11 @@ def stay():
     time.sleep(a)
     print()
 
-    outcome = ['You take the rope upstairs and begin to tie the rope around' 
+    outcome = ['You take the rope upstairs and begin to tie the rope around'
                ' the bannister. Bang Bang Bang. Gunshots come from outside,'
                " you rush downstairs and grab Harry. The gunshots continue"
                " then it all falls quiet, you start to wake Alex"
-               " when an officer wearing a Racoon City uniform bursts in." 
+               " when an officer wearing a Racoon City uniform bursts in."
                ' \nHe helps you get Alex and Harry into his car and '
                ' set off. "Thanks I had given up on anyone showing up" '
                'you say unable to hide your guilt '
@@ -1094,7 +1122,7 @@ def stay():
                'Congratulations you and your family '
                'survived the zombie apocalypse',
                "You did not survive the zombie outbreak"]
-    
+
     print(random.choice(outcome))
     play_again()
 
@@ -1129,7 +1157,8 @@ def play_again():
             print("Too scared to see if you would of made it?")
             print("Doubt you would of got far anyway")
             start()
+        else:
+            start()
 
 
 start()
-
